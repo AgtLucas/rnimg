@@ -63,6 +63,12 @@ class App extends Component {
             style={style.favorite}>
             <Text style={style.favoriteText}>{f.name}</Text>
           </TouchableHighlight>
+          <TouchableHighlight
+            onPress={() => this._deleteItem(f.name)}
+            underlayColor='transparent'
+            style={style.deleteButton}>
+            <Text style={style.deleteText}>&times;</Text>
+          </TouchableHighlight>
         </View>
       )
     })
