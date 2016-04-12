@@ -32,4 +32,4 @@ class RNImg extends Component {
   }
 }
 
-AppRegistry.registerComponent('RNImg', () => RNImg);
+AppRegistry.registerComponent('RNImg', () => RNImg)
