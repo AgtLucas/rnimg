@@ -27,7 +27,7 @@ class RNImg extends Component {
         configureScene={this.configureScene.bind(this)}
         style={{ flex: 1, backgroundColor: 'white' }}
         initialRoute={{ name: 'App' }}
-       />
+        renderScene={this.renderScene.bind(this)} />
     )
   }
 }
