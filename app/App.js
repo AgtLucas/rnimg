@@ -11,6 +11,17 @@ import React, {
 import Realm from 'realm'
 import _ from 'lodash'
 
+let realm = new Realm({
+  schema: [{
+    name: 'Categories',
+    'properties': {
+      name: 'string'
+    }
+  }]
+})
+
+let favs = realm.objects('Categories')
+
 class App extends Component {
   constructor () {
     super()
@@ -103,13 +114,4 @@ class App extends Component {
   }
 }
 
-let realm = new Realm({
-  schema: [{
-    name: 'Categories',
-    'properties': {
-      name: 'string'
-    }
-  }]
-})
-
-let favs = realm.objects('Categories')
+export default App
