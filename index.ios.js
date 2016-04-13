@@ -5,7 +5,7 @@ import React, {
 } from 'react-native'
 
 import App from './app/App'
-import ViewImages from './app.ViewImages'
+import ViewImages from './app/ViewImages'
 
 class RNImg extends Component {
   renderScene (route, navigator) {
