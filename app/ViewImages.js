@@ -78,3 +78,28 @@ class ViewImages extends Component {
     )
   }
 }
+
+const style = StyleSheet.create({
+  closeButton: {
+    height: 100,
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderBottomColor: '#e6e6e6',
+    borderBottomWidth: 1
+  },
+  closeButtonText: {
+    fontSize: 16,
+    color: '#afafaf',
+    marginTop: 10
+  },
+  loadingContainer: {
+    alignItems: 'center',
+    marginTop: 160
+  },
+  loading: {
+    fontSize: 22,
+    color: '#7f7f7f'
+  }
+})
+
+export default ViewImages
