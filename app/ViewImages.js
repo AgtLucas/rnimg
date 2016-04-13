@@ -69,7 +69,7 @@ class ViewImages extends Component {
           underlayColor='transparent'
           onPress={this.props.closeModal.bind(this)}
           style={style.closeButton}>
-          <Text style={style.closeButton}>Close</Text>
+          <Text style={style.closeButtonText}>Close</Text>
         </TouchableHighlight>
         <ScrollView style={{flex: 1}}>
           {images}
